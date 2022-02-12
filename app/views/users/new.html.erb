@@ -39,13 +39,13 @@
 
 <%= form_with model: @user do |form| %>
     <div>
-        <%= form.label :username %>
-        <%= form.text_field :username %>
+        <%= form.label :username, 'Your username here: ' %>
+        <%= form.text_field :username, value: 'default_username' %>
     </div>
 
     <div>
         <%= form.label :email %>
-        <%= form.email_field :email %>
+        <%= form.email_field :email, placeholder: 'example@example.com' %>
     </div>
 
     <div>
